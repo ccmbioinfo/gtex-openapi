@@ -1,0 +1,14 @@
+# flake8: noqa
+
+# import apis into api package
+from gtex_openapi.api.admin_endpoints_api import AdminEndpointsApi
+from gtex_openapi.api.biobank_data_endpoints_api import BiobankDataEndpointsApi
+from gtex_openapi.api.datasets_endpoints_api import DatasetsEndpointsApi
+from gtex_openapi.api.dynamic_association_endpoints_api import DynamicAssociationEndpointsApi
+from gtex_openapi.api.expression_data_endpoints_api import ExpressionDataEndpointsApi
+from gtex_openapi.api.gtex_portal_api_info_api import GTExPortalAPIInfoApi
+from gtex_openapi.api.histology_endpoints_api import HistologyEndpointsApi
+from gtex_openapi.api.metadata_endpoints_api import MetadataEndpointsApi
+from gtex_openapi.api.reference_genome_endpoints_api import ReferenceGenomeEndpointsApi
+from gtex_openapi.api.static_association_endpoints_api import StaticAssociationEndpointsApi
+
