@@ -34,7 +34,7 @@ class Gene(BaseModel):
     data_source: StrictStr = Field(alias="dataSource")
     description: Optional[StrictStr] = None
     end: StrictInt
-    entrez_gene_id: Optional[StrictStr] = Field(default=None, alias="entrezGeneId")
+    entrez_gene_id: Optional[StrictInt] = Field(default=None, alias="entrezGeneId")
     gencode_id: StrictStr = Field(alias="gencodeId")
     gencode_version: AppModelsResponsesGencodeVersion = Field(alias="gencodeVersion")
     gene_status: StrictStr = Field(alias="geneStatus")
