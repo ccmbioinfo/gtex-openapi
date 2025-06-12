@@ -368,7 +368,9 @@ class ApiClient:
             return obj.isoformat()
         elif isinstance(obj, decimal.Decimal):
             return str(obj)
-
+        # Special case, union of 2 enums
+        elif isinstance(obj, gtex_openapi.models.tissuesitedetailid_inner.TissuesitedetailidInner):
+            return obj.to_dict().value
         elif isinstance(obj, dict):
             obj_dict = obj
         else:
